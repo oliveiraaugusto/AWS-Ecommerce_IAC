@@ -1,0 +1,8 @@
+- name: Run yum update first
+  yum: name='*' state=latest
+
+- name: Install libs linux-python
+  yum: name=libselinux-python state=present
+
+- name: Install python mysql
+  yum: name=MySQL-python27 state=present
