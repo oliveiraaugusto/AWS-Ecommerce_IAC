@@ -1,0 +1,12 @@
+- name: Install Apache, PHP + Magento and/or Varnish
+  hosts: magento
+  user: ec2-user
+
+  roles:
+    - common
+    - httpd
+    - php
+    - composer
+    - mysql
+    - redis
+    - magento
